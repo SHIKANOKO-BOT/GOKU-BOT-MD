@@ -196,28 +196,28 @@ function clearTmp() {
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./IanSession")
+let directorio = readdirSync("./GokuSession")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-')
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./IanSession/${files}`)
+unlinkSync(`./GokuSession/${files}`)
 })
 } 
 
 function purgeSessionSB() {
 try {
-let listaDirectorios = readdirSync('./IanJadiBot/');
+let listaDirectorios = readdirSync('./GokuJadiBot/');
 let SBprekey = []
 listaDirectorios.forEach(directorio => {
-if (statSync(`./IanJadiBot/${directorio}`).isDirectory()) {
-let DSBPreKeys = readdirSync(`./IanJadiBot/${directorio}`).filter(fileInDir => {
+if (statSync(`./GokuJadiBot/${directorio}`).isDirectory()) {
+let DSBPreKeys = readdirSync(`./GokuJadiBot/${directorio}`).filter(fileInDir => {
 return fileInDir.startsWith('pre-key-')
 })
 SBprekey = [...SBprekey, ...DSBPreKeys]
 DSBPreKeys.forEach(fileInDir => {
-unlinkSync(`./IanJadiBot/${directorio}/${fileInDir}`)
+unlinkSync(`./GokuJadiBot/${directorio}/${fileInDir}`)
 })
 }
 })
@@ -227,7 +227,7 @@ console.log(chalk.bold.red(`Algo salio mal durante la eliminación, archivos no 
 }}
 
 function purgeOldFiles() {
-const directories = ['./IanSession/', './IanJadiBot/']
+const directories = ['./GokuSession/', './GokuJadiBot/']
 const oneHourAgo = Date.now() - (60 * 60 * 1000)
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
