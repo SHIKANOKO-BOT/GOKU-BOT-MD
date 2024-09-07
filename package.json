@@ -1,5 +1,5 @@
 {
-  "name": "IanBot-MD",
+  "name": "GOKU-BOT-MD",
   "version": "2.0.5",
   "description": "Simple WhatsApp Bot Multi Device",
   "main": "index.js",
@@ -18,16 +18,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/ianalejandrook15x/ian-bot-MD",
+  "homepage": "https://github.com/SHIKANOKO-BOT/GOKU-BOT-MD",
   "author": {
-    "name": "ianalejandrook15x"
+    "name": "SHIKANOKO-BOT"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ianalejandrook15x/ian-bot-MD.git"
+    "url": "git+https://github.com/SHIKANOKO-BOT/GOKU-BOT-MD.git"
   },
   "bugs": {
-    "url": "https://github.com/ianalejandrook15x/ian-bot-MD/issues"
+    "url": "https://github.com/SHIKANOKO-BOT/GOKU-BOT-MD/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
